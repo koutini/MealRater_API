@@ -34,4 +34,4 @@ class Rate(models.Model):
         """
         Override this method to format rate object.'
         """
-        return self.meal
+        return str(self.meal)

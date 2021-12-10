@@ -4,9 +4,9 @@ from .models import Meal, Rate
 
 class MealAdmin(admin.ModelAdmin):
     """Define the Meal in the admin side."""
-    list_display = ['unique_id', 'title', 'dscription']
+    list_display = ['unique_id', 'title', 'discription']
     list_filter = ['title', 'discription'] 
-    search_field = ['title', 'discription']
+    search_fields  = ['title']
     
 
      

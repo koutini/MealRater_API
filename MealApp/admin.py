@@ -9,8 +9,6 @@ class MealAdmin(admin.ModelAdmin):
     search_fields  = ['title']
     
 
-     
-
 class RateAdmin(admin.ModelAdmin):
     """Define the rate in the admin side."""
     list_display = ['unique_id', 'meal', 'user' , 'stars']

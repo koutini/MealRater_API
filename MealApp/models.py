@@ -36,11 +36,8 @@ class Rate(models.Model):
     meal = models.ForeignKey(Meal, on_delete=models.CASCADE)
     stars = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
 
-    
     class  Meta:
        unique_together = ('user', 'meal', )
-
-
 
     def __str__(self): 
         """

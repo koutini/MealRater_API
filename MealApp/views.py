@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 class RateViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Rate.objects.all() 
+    queryset = Rate.objects.all()
     serializer_class = RateMealSerializer
 
 

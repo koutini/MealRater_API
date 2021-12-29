@@ -1,6 +1,7 @@
-from rest_framework import viewsets
-from .models import Meal, Rate
-from .serializers import MealSerializer, RateMealSerializer
+
+from rest_framework import viewsets, mixins
+from .models import Meal, Rate, Profile
+from .serializers import MealSerializer, RateMealSerializer, ProfileSerializer, UserSerializer
 from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from rest_framework.response import Response

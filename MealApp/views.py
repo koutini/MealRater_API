@@ -1,3 +1,4 @@
+
 from rest_framework import viewsets, mixins
 from .models import Meal, Rate, Profile
 from .serializers import MealSerializer, RateMealSerializer, ProfileSerializer, UserSerializer
@@ -36,5 +37,3 @@ class MealViewSet(viewsets.ModelViewSet):
                                                     'stars': serializer.data.get('stars')})
             return Response({'status': 'done'}, status=status.HTTP_200_OK)
         return Response({'status': 'invalid data'}, status=status.HTTP_400_BAD_REQUEST)
-
-
